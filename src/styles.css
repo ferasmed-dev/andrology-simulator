@@ -325,3 +325,16 @@ svg.schem .axis-arrow { stroke: var(--text-secondary); }
 svg.schem .ah { fill: var(--text-secondary); }
 svg.schem .feedback { fill: none; stroke: var(--critical); stroke-width: 1.4; stroke-dasharray: 4 3; }
 @media (forced-colors: active) { svg.schem .gct, svg.schem .pen-tumour, svg.schem .met-dot { fill: CanvasText; } }
+
+/* ---- Simulario theme: colours and logo only ---- */
+:root { --sim-accent: #4B3FE0; --surface-0: #F5F6FB; --surface-1: #FFFFFF; --surface-2: #EEF0F7; --line: #E1E3EE; --grid: #E1E3EE; --text-primary: #12142B; --text-secondary: #5A5F7A; --text-muted: #7A7F99; --ink: #12142B; --focus: #4B3FE0; }
+@media (prefers-color-scheme: dark) {
+  :root { --sim-accent: #6A60F5; --surface-0: #0E1024; --surface-1: #181B33; --surface-2: #20243F; --line: #2A2E4A; --grid: #2A2E4A; --text-primary: #F2F3FA; --text-secondary: #A9ADC8; --text-muted: #8A8FAD; --ink: #F2F3FA; --focus: #6A60F5; }
+}
+.views button[aria-selected="true"], .lang button[aria-pressed="true"] { background: var(--sim-accent); color: #fff; }
+.chips button[aria-pressed="true"] { background: var(--sim-accent); color: #fff; border-color: var(--sim-accent); }
+.quiz .filters button[aria-pressed="true"] { background: var(--sim-accent); color: #fff; border-color: var(--sim-accent); }
+.sim-brand { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: inherit; margin: 0 0 6px; }
+.sim-brand svg { display: block; flex: none; }
+.sim-brand b { font: 700 18px/1 "Space Grotesk", "Segoe UI", system-ui, sans-serif; letter-spacing: -.03em; }
+h1 { font-family: "Space Grotesk", "Segoe UI", system-ui, -apple-system, sans-serif; letter-spacing: -.02em; }
